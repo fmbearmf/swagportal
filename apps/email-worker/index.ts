@@ -31,7 +31,7 @@ export default {
         body.length > 3900 ? `${body.slice(0, 3900)}\n\n... (truncated)` : body;
 
       const payload = {
-        username: "swag.giving mailbot",
+        username: "swag.giving inbox",
         avatar_url: "https://cloudflare.com/favicon.ico",
         embeds: [
           {
