@@ -11,8 +11,14 @@ export default {
     ctx: ExecutionContext,
   ): Promise<void> {
     try {
+      if (!env.DISCORD_WEBHOOK_URL) {
+        throw new Error("missing DISCORD_WEBHOOK_URL");
+      }
+
+      const rawEmail = await new Response(message.raw).arrayBuffer();
+
       const parser = new PostalMime();
-      const parsedEmail = await parser.parse(message.raw);
+      const parsedEmail = await parser.parse(rawEmail);
 
       const senderName = parsedEmail.from?.name
         ? `${parsedEmail.from.name} `
