@@ -2,6 +2,6 @@
   "name": "swagballs-monorepo",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/site"
   ]
 }
