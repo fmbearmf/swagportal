@@ -1,5 +1,5 @@
 {
-  "name": "discord-email-worker",
+  "name": "email-worker",
   "main": "index.ts",
   "compatibility_date": "2026-10-03",
 }
