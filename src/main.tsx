@@ -69,7 +69,7 @@ const docs: readonly DocumentItem[] = [
 function App(): React.JSX.Element {
   const [unit, setUnit] = useState<number>(0);
   const [doc, setDoc] = useState<number>(-1);
-  const [simple, setSimple] = useState<boolean>(false);
+  const [simple, _setSimple] = useState<boolean>(false);
 
   function handleTabsKeyDown(
     e: React.KeyboardEvent<HTMLButtonElement>,
