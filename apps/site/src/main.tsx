@@ -372,7 +372,7 @@ function App(): React.JSX.Element {
                 <h3>Identity memorandum</h3>
                 <p>One community. A consolidated corporate presentation.</p>
                 <a href="#documents" onClick={() => setDoc(2)}>
-                  View memorandum SB-069
+                  View memorandum SB-003
                 </a>
               </article>
             </section>
